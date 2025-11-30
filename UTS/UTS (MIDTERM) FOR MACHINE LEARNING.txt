@@ -1,0 +1,126 @@
+UTS (MIDTERM) FOR MACHINE LEARNING AND DEEP LEARNING CLASSES - INDIVIDUAL TASK																
+“HANDS-ON END-TO-END MODELS MACHINE LEARNING AND DEEP LEARNING"																
+																
+																
+1. Main Objective																
+The goal of this individual task is to enhance your practical knowledge of both machine learning and deep learning by working on end-to-end projects.																
+																
+2. Task Overview																
+"In this assignment, you will develop end-to-end machine learning and deep learning models using the provided dataset. 
+This includes data preprocessing, model selection, training, evaluation, and comparison of performance across traditional machine learning models and deep learning architectures. 
+Your task is to build a comprehensive pipeline and analyze the results to draw meaningful conclusions."																
+																
+3. Submission Components:																
+"a. Upload on GitHub
+Ensure all your code and files are uploaded to a GitHub repository."																
+"b. Create Separate Repositories
+For Machine Learning class: Create a repository specifically for your ML-related tasks and code. (ex: midterm-machine-learning)
+For Deep Learning class: Create a separate repository for your DL-related tasks and code. (ex: midterm-deep-learning)
+If you are enrolled in both classes, make sure you create two separate repositories, one for ML and one for DL."																
+"c. Include Jupyter Notebooks with Explanations
+Upload each Jupyter notebook that contains your code and results.
+Provide clear explanations and comments in the notebooks for each step of the process (data preprocessing, model training, evaluation, etc.)."																
+"d. README.md for Repository Explanation (generate README.md using your favorite LLMs for better structure)
+Include a README.md file in each repository that explains:
+The purpose of the repository.
+A brief overview of the project.
+Description of the models and matrix results used.
+How to navigate through the github/notebooks.
+Your identification(Name,Class,NIM)"																
+																
+"4. Deadline:  All repositories must be fully submitted before 6 Desember 2025
+*No late submissions will be accepted.*"																
+																
+																
+																
+DATASETS OVERVIEW AND DESCRIPTION FOR MACHINE LEARNING CLASS AND DEEP LEARNING - INDIVIDUAL TASK																
+“HANDS-ON END-TO-END MODELS MACHINE LEARNING AND DEEP LEARNING"																
+																
+																
+1. Main Objective																
+To design and implement an end-to-end machine learning and deep learning pipeline that can predict the probability of an online transaction being fraudulent																
+																
+2. Task Overview:																
+"In this assignment, you will build an end-to-end fraud detection, You will work with both the transaction and identity tables, perform data cleaning and preprocessing, 
+handle missing values and class imbalance, and engineer or select relevant features. You are required to implement machine learning or deep learning models 
+to predict the probability that a transaction is fraudulent (isFraud). The workflow should cover data preprocessing, model training, hyperparameter tuning (at a basic level), evaluation using appropriate metrics"																
+																
+3. Link Datasets:																
+Transcation Dataset																
+"train_transaction.csv
+Contains labeled transaction data used for model training and evaluation.
+Each row represents one online transaction, described by many features (amount, time, product code, card information, address, etc.), 
+plus a binary label isFraud indicating whether the transaction is fraudulent (1) or not (0)."																
+"test_transaction.csv
+Contains unlabeled transaction data with the same feature columns as train_transaction except isFraud.
+This file is used as input to the trained model to generate fraud probability predictions, which are then written to a submission file (TransactionID, isFraud)"																
+																
+4. Link Notebook:																
+1. https://colab.research.google.com/drive/1oz46ISmhMqGWVSsHWQcfdzZYy0tR4kVH?usp=sharing																
+																
+																
+																
+DATASETS OVERVIEW AND DESCRIPTION FOR MACHINE LEARNING CLASS AND DEEP LEARNING - INDIVIDUAL TASK																
+“HANDS-ON END-TO-END MODELS MACHINE LEARNING AND DEEP LEARNING"																
+																
+																
+1. Main Objective																
+"To design and implement an end-to-end regression pipeline (using machine learning and/or deep learning) 
+that can predict a continuous target value from the input features (for example, the release year of a song)."																
+																
+2. Task Overview:																
+"In this assignment, you will build an end-to-end regression model. You will work with the provided dataset, perform data cleaning and preprocessing, 
+handle missing values and outliers, and engineer or select relevant features. You are required to implement machine learning or deep learning regression
+ algorithms to predict the target variable. The workflow should include data preprocessing, model training, basic hyperparameter tuning, 
+and evaluation using appropriate regression metrics (such as MSE, RMSE, MAE, or R²), along with a brief interpretation of the results."																
+																
+3. Link Datasets:																
+Regresi Dataset																
+"midterm-regresi-dataset.csv
+The first value in each row (for example, 2001) is the target label — it tells us the year the song was released.
+
+All the other numbers in that row (like 49.94357, 21.47114, 73.0775, ...) are features that describe the audio of the song.
+These are numeric values computed from the music signal (things like timbre and other audio characteristics), 
+but they don’t have simple, human-friendly names, so we usually just call them feature_1, feature_2, ..., etc."																
+																
+																
+4. Link Notebook:																
+1. https://colab.research.google.com/drive/1tNdKsk4IDU-jm8YWoCDe7p41X1dV-j3l?usp=sharing																
+																
+																
+																
+DATASETS OVERVIEW AND DESCRIPTION FOR MACHINE LEARNING CLASS  - INDIVIDUAL TASK																
+“HANDS-ON END-TO-END MODELS MACHINE LEARNING AND DEEP LEARNING"																
+																
+																
+1. Main Objective																
+design and implement a comprehensive end-to-end machine learning pipeline dedicated to a clustering task.																
+																
+2. Task Overview:																
+"In this assignment, you will build a customer clustering pipeline. You will use a customer dataset, clean and preprocess the data, handle missing values and outliers, and prepare useful features. 
+Then you will apply unsupervised learning methods (such as k-means, hierarchical clustering, or DBSCAN) to group customers based on their spending and payment behavior. 
+Your workflow should include data preprocessing, model training, choosing the number of clusters, evaluating the clusters, and explaining what each cluster represents."																
+																
+3. Link Datasets:																
+Clustering Dataset																
+"clusteringmidterm.csv
+This dataset contains information about each customer’s credit card usage and payment behavior. 
+CUST_ID is the unique ID for each customer. 
+BALANCE shows the customer’s current or average outstanding balance on the card, 
+while BALANCE_FREQUENCY indicates how often this balance is updated or changes over time. 
+PURCHASES is the total amount the customer has spent using the card,
+ with ONEOFF_PURCHASES capturing large, one-time purchases and 
+INSTALLMENTS_PURCHASES capturing purchases paid in multiple installments. 
+CASH_ADVANCE represents the total amount of cash the customer has withdrawn using the card. 
+The variables PURCHASES_FREQUENCY, ONEOFF_PURCHASES_FREQUENCY, and PURCHASES_INSTALLMENTS_FREQUENCY describe how often the customer makes purchases in general, as one-off payments, or as installments.
+ CASH_ADVANCE_FREQUENCY and CASH_ADVANCE_TRX describe how often and how many times the customer takes cash advances, 
+while PURCHASES_TRX is the number of purchase transactions. 
+CREDIT_LIMIT is the maximum amount of credit available to the customer. 
+PAYMENTS shows how much the customer has paid back, 
+and MINIMUM_PAYMENTS is the total of the minimum required payments they have made. 
+PRC_FULL_PAYMENT indicates how often the customer pays their full balance (as a proportion of months), 
+and TENURE shows how long (in months) the customer has had the card or account."																
+																
+																
+4. Link Notebook:																
+1. https://colab.research.google.com/drive/1eOxknEdUhFay2aQ65vPnVY5bVo65SuCm?usp=sharing																
